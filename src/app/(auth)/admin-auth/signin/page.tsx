@@ -114,7 +114,7 @@ function SignInAdminPage() {
         </Form>
         <div className="text-center mt-4 text-sm text-gray-500">
           <p>
-            Don't have an account?
+            Don&apos;t have an account?
             <a href="/admin-auth/signup" className="text-blue-500 underline">
               Register
             </a>{" "}
