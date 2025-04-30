@@ -22,8 +22,6 @@ import {
 import { LogOut } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { deleteCookie } from "cookies-next/client";
-import { set } from "zod";
-import { log } from "console";
 
 export default function Navbar() {
   const router = useRouter();

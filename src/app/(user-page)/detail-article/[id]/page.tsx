@@ -92,9 +92,12 @@ function DetailArticlePage() {
                   loading="eager"
                 />
               </picture>
-              <div className="text-gray-500 text-lg font-medium mt-10  text-justify">
-                {detailArticle?.content ? detailArticle.content : ""}
-              </div>
+              <div
+                className="text-gray-500 text-lg font-medium mt-10  text-justify"
+                dangerouslySetInnerHTML={{
+                  __html: detailArticle?.content ? detailArticle.content : "",
+                }}
+              />
             </div>
             <div className="text-black text-lg font-bold mt-10">
               Other articles

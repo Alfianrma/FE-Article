@@ -49,7 +49,6 @@ export function AdminUserProvider({ children }: { children: React.ReactNode }) {
       );
 
       const userData = response.data;
-      console.log("userData", userData);
 
       // Redirect if role not admin
       if (userData.role !== "Admin") {

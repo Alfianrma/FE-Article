@@ -159,7 +159,12 @@ function AdminArticlesPage() {
             placeholder="Search title"
           />
         </div>
-        <button className="p-2 bg-primaryBlue rounded-lg text-white text-sm flex flex-row gap-2 items-center justify-center hover:bg-primaryBlue/80 transition-all duration-200 ease-in-out hover:cursor-pointer">
+        <button
+          className="p-2 bg-primaryBlue rounded-lg text-white text-sm flex flex-row gap-2 items-center justify-center hover:bg-primaryBlue/80 transition-all duration-200 ease-in-out hover:cursor-pointer"
+          onClick={() => {
+            router.push("/admin/articles/add");
+          }}
+        >
           <Plus strokeWidth={2.5} /> Add Articles
         </button>
       </div>
